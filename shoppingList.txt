@@ -1,0 +1,20 @@
+Instructions
+HTML <form></form> elements can be used to collect information from the user and put that information into an HTTP GET or POST request that is sent to a server. In this lab, you'll create a page with <form> elements that send GET requests to Amazon.com, which will cause Amazon.com to send back an HTTP response with search results.
+
+When you send an HTTP GET request, the user-collected data, called parameters, are displayed in the URL after a question mark ('?'). These parameters are in a key-value pair, where the key is the "name" of an <input> element, and the value is whatever the user typed into that input field. Multiple parameters are joined with the ampersand ('&') character.
+
+For example, go to http://google.com, and search for "kittens". You'll notice that the address bar has a bunch of junk in it, but it generally looks like:
+
+http://google.com/search?key=value&key=value&key=value&...
+
+In there, you should find a parameter named q whose value is kittens. In this case, Google's search engine considers q to be short for query, and this is your search term.
+
+Observe what happens if you click this link: http://google.com/search?q=nasa
+
+Steps
+Inside your <body> element, create a <form> element. Give the form a method attribute and set its value to GET. Give the form a action attribute and set its value to https://www.amazon.com/s. The method attribute specifies which type of request to send to the server, and the action attribute specifies which location on the server to look for. Finally, give your form the targetattribute and give it the value _blank. This will make sure a new tab opens up with the search results.
+Inside your <form> element, create an <input> element. The default type of input is a textbox, so that is what this element will be. Give it the name attribute the value k. k is short for keyword and k is what Amazon's search engine uses as its parameter name.
+Create a second <input> element and set its type attribute to the value submit. Because you changed the type of the input element to submit, it will become a submit button.
+Test out your form in Replit's browser pane by entering in a value in the form's textbox and clicking the submit button!
+Now, our goal is to turn this into a shopping list, so we won't want to have to type in every item every time we open the list! In your HTML code, add the value attribute to your <input> element, and for the value of this attribute, enter a gift you would like to receive. The value attribute sets a default value for the <input> element which will be pre-entered into the box when the user opens the page.
+Copy this <form> element (and everything inside of it!) several more times to add more items to your list. Just make sure to change the value attribute of the new form input elements so that your list will consist of several different items.
