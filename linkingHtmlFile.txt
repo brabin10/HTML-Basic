@@ -1,0 +1,15 @@
+Instructions
+I am creating a website about my favorite animal, the frog, but I need help adding another page to my website. Follow the steps below so that a user can successfully navigate between my two webpages.
+
+Steps
+Create a new HTML file with the name frog-facts.html
+Add in the five mandatory HTML elements. Give the <title> element the content: Frog Facts
+Now, between the <body></body> tags, do the following:
+
+Create an unordered list (<ul></ul>) of a few different species of frog.
+Create an ordered list (<ol></ol>) of what you think are the top five coolest facts about frogs.
+Remember that list items need to be inside of <li></li> tags!
+Give each list a title using a heading element like <h3></h3>
+Create an anchor tag (<a></a>) and use it to link back to the Home page (index.html).
+Make sure your anchor element has content or text inside of it to tell the user what the link is for. You also need to make sure to give the anchor tag the href attribute and assign the attribute a value. The value needs to be the path to the Home page. Your opening <a> tag should look like this: <a href="index.html">.
+Go to the index.html file and add a link to your frog-facts.html file.
